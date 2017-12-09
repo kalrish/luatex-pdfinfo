@@ -3,10 +3,10 @@ local string_utfvalues = string.utfvalues
 local table_concat = table.concat
 
 
-local module_name = "pdfinfo"
-
 local warn
 if luatexbase then
+	local module_name = "pdfinfo"
+	
 	luatexbase.provides_module{
 		name=module_name,
 		date="2017/04/23"
