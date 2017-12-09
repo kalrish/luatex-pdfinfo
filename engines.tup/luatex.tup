@@ -1,0 +1,9 @@
+ifdef LUATEX
+LUATEX = @(LUATEX)
+else
+LUATEX = luatex
+endif
+LUATEX_FLAGS = @(LUATEX_FLAGS)
+TEXLUA_BYTECODE_EXTENSION=texluabc
+
+!texluac = |> $(LUATEX) --luaconly @(LUATEX_LUAC_FLAGS) -o %o -- %f |> %B.$(TEXLUA_BYTECODE_EXTENSION)

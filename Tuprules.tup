@@ -1,0 +1,3 @@
+.gitignore
+
+include engines.tup/@(LUATEX_ENGINE).tup
