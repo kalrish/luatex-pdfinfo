@@ -152,9 +152,6 @@ local compute_metadata = function( t )
 end
 
 return {
-	getmetadata = function()
-		return assert(false)
-	end,
 	computemetadata = compute_metadata,
 	setmetadata = function( t )
 		if tex.outputmode == 1 or status.ini_version == true then
